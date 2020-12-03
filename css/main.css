@@ -1396,3 +1396,10 @@ main section h2{
 }
 
 }
+
+@media screen and (min-width: 993px) {
+  button.menu,nav.fixed{ 
+    display: none !important;
+  }
+
+}

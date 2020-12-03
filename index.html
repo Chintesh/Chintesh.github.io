@@ -36,7 +36,7 @@
         <li><a href="#contact-me">Contact</a></li>
       </ul>
     </nav>
-        <button class="menu" aria-label="Main Menu">
+        <button class="menu" id="menumain" aria-label="Main Menu">
       <svg width="100" height="100" viewBox="0 0 100 100">
         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
         <path class="line line2" d="M 20,50 H 80" />
@@ -688,33 +688,6 @@ setTimeout(() => jQuery("#service-collection .serv-0").addClass("active"), 200);
 </script>
 
 <script type="text/javascript">
-	 $(document).ready(function () {
-
-         $('.client-single').on('click', function (event) {
-            event.preventDefault();
-
-            var active = $(this).hasClass('active');
-
-            var parent = $(this).parents('.testi-wrap');
-
-            if (!active) {
-                var activeBlock = parent.find('.client-single.active');
-
-                var currentPos = $(this).attr('data-position');
-
-                var newPos = activeBlock.attr('data-position');
-
-                activeBlock.removeClass('active').removeClass(newPos).addClass('inactive').addClass(currentPos);
-                activeBlock.attr('data-position', currentPos);
-
-                $(this).addClass('active').removeClass('inactive').removeClass(currentPos).addClass(newPos);
-                $(this).attr('data-position', newPos);
-
-            }
-        });
-   
-   }(jQuery));
-
 
 jQuery('nav ul li').click(function(){
  jQuery(this).addClass('active').siblings().removeClass('active');
@@ -727,6 +700,13 @@ $(window).on(
         if (400 > $(window).scrollTop()) {
             $('.menu').removeClass('visiable');
             $('nav.fixed').hide('slow');
+
+  
+
+          if($( 'nav.fixed' ).isVisible()){
+             $('button#menumain').addClass('opened');
+          } 
+
             
         } else {
             $('.menu').addClass('visiable'); 
@@ -736,7 +716,7 @@ $(window).on(
         }
       });
 
-jQuery('button.menu.visiable').on('click',function(){
+jQuery('button#menumain').click(function(){
   jQuery(this).toggleClass("opened");
   if($( this ).hasClass( "opened" )){
      $('nav.fixed').show('slow');
