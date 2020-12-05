@@ -21,7 +21,7 @@ CBSkillsDiagram.prototype.init = function() {
   // set loader
   __self.container.html('Crunching data.. Please wait');
 
-  $.ajax({
+  jQuery.ajax({
     url: 'https://coderbits.com/' + __self.username + '.json',
     dataType: 'jsonp'
   }).done(function(data) {
@@ -60,8 +60,8 @@ CBSkillsDiagram.prototype.createDom = function(data) {
     // Ignore too low score..
     if( item.score / total_score * 100 < 1 ) continue;
 
-    $('<dt class="skill-' + item.level + '">' + item.name + '</dt>').appendTo(__self.container);
-    $('<dd>' + item.score + '</dd>').appendTo(__self.container); 
+    jQuery('<dt class="skill-' + item.level + '">' + item.name + '</dt>').appendTo(__self.container);
+    jQuery('<dd>' + item.score + '</dd>').appendTo(__self.container); 
   }
 
   // call callback
@@ -72,8 +72,8 @@ CBSkillsDiagram.prototype.createDom = function(data) {
 };
 
 // Activate all diagrams
-$(function() {
-  $('.skills-diagram[data-cb-username]').each(function() {
-    new CBSkillsDiagram( { container: $(this) } );
+jQuery(function() {
+  jQuery('.skills-diagram[data-cb-username]').each(function() {
+    new CBSkillsDiagram( { container: jQuery(this) } );
   });
 });

@@ -59,9 +59,10 @@
   width: 3em;
   height: 3em;
   line-height: 3em;
-  background-color: rgba(138, 138, 140, .3);
-  border-color: rgba(138, 138, 140, 1);
-  color: rgba(138, 138, 140, 1);
+  background-color: rgba(177, 18, 2, .3);
+  border-color: rgba(177, 18, 2, 1);
+  color: rgba(177, 18, 2, 1);
+  
 }
 .skills-diagram .skill-4 {
   width: 4em;
@@ -116,10 +117,9 @@
   width: 11em;
   height: 11em;
   line-height: 11em;
-  
-  background-color: rgba(177, 18, 2, .3);
-  border-color: rgba(177, 18, 2, 1);
-  color: rgba(177, 18, 2, 1);
+  background-color: rgba(138, 138, 140, .3);
+  border-color: rgba(138, 138, 140, 1);
+  color: rgba(138, 138, 140, 1);
 }
 .skills-diagram .skill-10 {
   width: 14em;
