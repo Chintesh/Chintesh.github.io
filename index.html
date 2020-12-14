@@ -1,37 +1,36 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
    <head>
       <title>IMChintesh</title>
       <script src="js/jquery.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
       <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700" rel="stylesheet">
       <link href="css/skills-diagram.css" rel="stylesheet">
       <link href="css/main.css" rel="stylesheet">
       <script src="js/skills-diagram.coderbits.js"></script>
-     <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script> -->
       <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
    </head>
    <body>
-      <header>
-         <span>IMChintesh</span>
+      <header class="main-head">
+         <span class="text-saddow">IMChintesh</span>
          <i class="fa fa-lightbulb-o"></i>
          <nav>
             <ul>
-               <li><a href="#introcontent">About</a></li>
-               <li><a href="#skills-dia">Skils</a></li>
-               <li><a href="#services-container">Services</a></li>
-               <li><a href="#testimonial-area">Testimonials</a></li>
-               <li><a href="#contact-me">Contact</a></li>
+               <li class="text-saddow"><a href="#introcontent">About</a></li>
+               <li class="text-saddow"><a href="#skills-dia">Skils</a></li>
+               <li class="text-saddow"><a href="#services-container">Services</a></li>
+               <li class="text-saddow"><a href="#testimonial-area">Testimonials</a></li>
+               <li class="text-saddow"><a href="#contact-me">Contact</a></li>
             </ul>
          </nav>
          <nav class="fixed">
             <ul>
-               <li><a href="#introcontent">About</a></li>
-               <li><a href="#skills-dia">Skils</a></li>
-               <li><a href="#services-container">Services</a></li>
-               <li><a href="#testimonial-area">Testimonials</a></li>
-               <li><a href="#contact-me">Contact</a></li>
+               <li class="text-saddow"><a href="#introcontent">About</a></li>
+               <li class="text-saddow"><a href="#skills-dia">Skils</a></li>
+               <li class="text-saddow"><a href="#services-container">Services</a></li>
+               <li class="text-saddow"><a href="#testimonial-area">Testimonials</a></li>
+               <li class="text-saddow"><a href="#contact-me">Contact</a></li>
             </ul>
          </nav>
          <button class="menu" id="menumain" aria-label="Main Menu">
@@ -45,7 +44,7 @@
       <main class="container">
          <section class="introcontent" id="introcontent">
           <div class="intro_wrapper">
-            <h1>Who i am ?</h1>
+            <h1 class="text-saddow">Who i am ?</h1>
             <h2>
                I’m Chintesh Prajapati Wordpress Developer.
             </h2>
@@ -60,7 +59,7 @@
          </section>
          <section class="skills-dia" id="skills-dia">
             <div class="skills_wraper">
-               <h2>
+               <h2 class="text-saddow">
                   Skills
                </h2>
                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -84,132 +83,129 @@
          </section>
          <section class="services-container" id="services-container">
             <div class="services_wraper">
-               <h2>Services</h2>
+               <h2 class="text-saddow">Services</h2>
                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
             </div>
 
             <div class="servie_graph">
-               <div class="servie_graph">
-                  <div class="service_wrapper">
-                     <div class="single_services wordpress">
-                        <i class="fa fa-wordpress" aria-hidden="true"></i>
-                        <div class="service_name">WordPress</div>
-                     </div>
-                     <div class="single_services brush">
-                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                        <div class="service_name">Design</div>
-                     </div>
-                     <div class="single_services cart">
-                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                        <div class="service_name">WooCommerce</div>
-                     </div>
+               <div class="service-block-container">
+               <div class="service-block wp">
+                  <div class="service-underlay">
+                     <span class="service-name">WordPress</span>
                   </div>
+                  <span class="service-icon">
+                <em class="fa fa-wordpress"></em>
+                </span>
                </div>
-               <div class="service_wrapper">
-                  <div class="single_services random">
-                     <i class="fa fa-random" aria-hidden="true"></i>
-                     <div class="service_name">Site Migration</div>
+          
+
+                <div class="service-block des">
+                  <div class="service-underlay">
+                     <span class="service-name">Design</span>
                   </div>
-                  <div class="single_services star">
-                     <i class="fa fa-star" aria-hidden="true"></i>
-                     <div class="service_name">Maintenance</div>
-                  </div>
-                  <div class="single_services plug">
-                     <i class="fa fa-plug" aria-hidden="true"></i>
-                     <div class="service_name">Wordpress Plugins</div>
-                  </div>
+                  <span class="service-icon">
+                <em class="fa fa-paint-brush"></em>
+                </span>
                </div>
+            
+               <div class="service-block woo">
+                  <div class="service-underlay">
+                     <span class="service-name">WooCommerce</span>
+                  </div>
+                  <span class="service-icon">
+                <em class="fa fa-cart-plus"></em>
+                </span>
+                 
+               </div>
+            
+               <div class="service-block mig">
+                  <div class="service-underlay">
+                     <span class="service-name">Site Migration</span>
+                  </div>
+                  <span class="service-icon">
+                <em class="fa fa-random"></em>
+                </span>
+                 
+               </div>
+            
+               <div class="service-block maintain">
+                  <div class="service-underlay">
+                     <span class="service-name">Maintenance</span>
+                  </div>
+                  <span class="service-icon"><em class="fa fa-star"></em></span>
+               </div>
+                <div class="service-block plugins">
+                  <div class="service-underlay">
+                     <span class="service-name">Wordpress Plugins</span>
+                  </div>
+                  <span class="service-icon"><em class="fa fa-plug"></em></span>
+               </div>
+            </div>  
             </div>
-            </div>
+            
          </section>
           <section class="ex-dia" id="ex-dia">
             <div class="ex_wraper">
-               <h2>
+               <h2 class="text-saddow">
                   Experiance
                </h2>
                <p>I am working with WordPress from last 4 year, Worked on Wordpress/Woocomerce Rest api, React js, WordPress Block Worpress Theme, Worpress Plugins etc. </p>
             </div>
            <!-- The Timeline -->
 
-          <ul class="timeline">
+     
+  <div class="timeline ex-main">
+    <div class="timeline__group">
+      <span class="timeline__year time" aria-hidden="true">2016</span>
+      <div class="timeline__cards">
+        <div class="timeline__card card green">
+          <header class="card__header">
+            <time class="time" datetime="2008-02-02">
+              <span class="time__day">1</span>
+              <span class="time__month">Sept</span>
+            </time>
+          </header>
+          <div class="card__content">
+            <p>Worked with VMG softwere solutions Infocity gandhinagar.</p>
+          </div>
+        </div>
+        <div class="timeline__card card yellow">
+          <header class="card__header">
+            <time class="time" datetime="2008-09-01">
+              <span class="time__day">26</span>
+              <span class="time__month">Dec</span>
+            </time>
+          </header>
+          <div class="card__content">
+            <p>Started to work with Dwebguys internet PVT LTD as a WordPress Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline__group">
+      <span class="timeline__year time" aria-hidden="true">2018</span>
+      <div class="timeline__cards">
+        <div class="timeline__card card gray">
+          <header class="card__header">
+            <time class="time" datetime="2008-07-14">
+              <span class="time__day">16</span>
+              <span class="time__month">Jul</span>
+            </time>
+          </header>
+          <div class="card__content">
+            <p>Started to working with Multidots as a WordPress developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <!-- Item 1 -->
-            <li>
-              <div class="direction-l">
-                <div class="flag-wrapper">
-                  <span class="flag">WP Developer</span>
-                  <span class="time-wrapper"><span class="time">Jul 2018 - Present</span></span>
-                </div>
-                <div class="desc">Working with <b>Multiots solutions</b> as a wordpress developer.</div>
-              </div>
-            </li>
-
-            <li>
-              <div class="direction-r">
-                <div class="flag-wrapper">
-                  <span class="flag">WP Developer</span>
-                  <span class="time-wrapper"><span class="time">Jan 17 - Jul - 18</span></span>
-                </div>
-                <div class="desc">Started my journy in wordpress Development from Dwebguys Internet Pvt LTD.</div>
-              </div>
-            </li>
-            
-            <!-- Item 2 -->
-            <li>
-              <div class="direction-l">
-                <div class="flag-wrapper">
-                  <span class="flag">Web designer</span>
-                  <span class="time-wrapper"><span class="time">2016</span></span>
-                </div>
-                <div class="desc">VMG Softwere solutions, Gandhinagar</div>
-              </div>
-            </li>
-
-            <!-- Item 3 -->
-            <li>
-              <div class="direction-r">
-                <div class="flag-wrapper">
-                  <span class="flag">Computer engineering</span>
-                  <span class="time-wrapper"><span class="time">2012-2016</span></span>
-                </div>
-                <div class="desc">Complated my computer enginrring from Covernment engineering collage Gandhinagar.</div>
-              </div>
-            </li>
-
-
-             <li>
-              <div class="direction-l">
-                <div class="flag-wrapper">
-                  <span class="flag">HSC</span>
-                  <span class="time-wrapper"><span class="time">2012</span></span>
-                </div>
-                <div class="desc">Adarsh Highschool visnagar?</div>
-              </div>
-            </li>
-            
-          </ul>
+          
          </section>
-         <section id="testimonial-area">
-            <h2>Testimonials</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-            <div class="testi-in_wrapper">
-               <div class="wrapper border-radius">
-                  <div class="title">Meet <small>Dhoshi</small></div>
-                  <div class="description">
-                     <p>Really great work, Well done chintesh Prajapati.</p>
-                  </div>
-               </div>
-               <div class="wrapper border-radius">
-                  <div class="description text-right">
-                     <p>Your appoitment system is just woow. really gled to work with you.</p>
-                  </div>
-                  <div class="title">Jorder <small>Test</small></div>
-               </div>
-            </div>
-         </section>
+        
          <section class="contact-me" id="contact-me">
             <div class="contact_wraper">
-               <h2>
+               <h2 class="text-saddow">
                   Contact
                </h2>
                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -217,15 +213,18 @@
             </div>
             <div class="contact_form">
                <form class="form">
-                  <label for="name">FIRST AND LAST NAME</label><input id="name" type="text"><label for="company-name">POSITION HELD</label><input id="company-name" type="text"><label for="work-email">WORK EMAIL</label><input id="work-email" type="text"><label for="project-idea">HOW CAN WE WORK TOGETHER</label><textarea id="project-idea" rows="4"></textarea><a class="btn btn-dark btn-mid">Submit</a>
+                  <label for="name">FIRST AND LAST NAME</label><input id="name" type="text"><label for="work-email">WORK EMAIL</label><input id="work-email" type="text"><label for="project-idea">HOW CAN WE WORK TOGETHER</label><textarea id="project-idea" rows="4"></textarea><a class="btn btn-dark btn-mid">Submit</a>
                </form>
             </div>
          </section>
-        
       </main>
-      <footer>
+      <footer>Find me on:- 
+        <i class="fa fa-wordpress"></i>
+        <i class="fa fa-facebook"></i>
+         <i class="fa fa-linkedin"></i>
+          <i class="fa fa-twitter"></i>
+           <i class="fa fa-instagram"></i>
       </footer>
-      <!--Start of Tawk.to Script-->
       <script type="text/javascript">
          var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
          (function(){
