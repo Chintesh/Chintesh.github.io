@@ -249,7 +249,6 @@ section.contact-me h2 {
 .skills_wraper {
     align-self: center;
     flex-basis: 40%;
-    order: 2;
 }
 .services_wraper {
     flex-basis: 40%;
@@ -259,12 +258,12 @@ section.contact-me h2 {
 
 .servie_graph {
     flex-basis: 55%;
-    order: 2;
 }
 
 .contact_wraper {
     flex-basis: 40%;
      align-self: center;
+     order: 2;
 }
 
 .contact_form {
@@ -485,7 +484,6 @@ section#ex-dia {
 .ex_wraper {
     flex-basis: 40%;
     align-self: center;
-    order: 2;
 }
 
 .service-block-container {
@@ -959,7 +957,7 @@ SETTINGS
 */
 /**/
 .timeline {
-  --timelineMainColor: rgba(214, 89, 102, 1);
+  --timelineMainColor: #f4a3a3;
 }
 .timeline.ex-main {
     flex-basis: 55%;
@@ -981,13 +979,13 @@ SETTINGS
     border-color: rgba(109, 182, 173, 1);
     color: rgba(109, 182, 173, 1);
 }
-section .intro_wrapper {
+/*section .intro_wrapper {
     flex-basis: 55%;
     justify-content: space-between;
-}
+}*/
 .chintesh_icon {
-    text-align: center;
     flex-basis: 35%;
+    margin-top: -40px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1112,11 +1110,6 @@ footer i.fa.fa-wordpress {
     border-color: rgba(201, 155, 129, 1);
     color: rgba(201, 155, 129, 1);
 }
-
-.chintesh_icon {
-    text-align: center;
-}
-.chintesh_icon img{
-  width: 80%;
-    text-align: center;
+button.menu.visiable.opened{
+  right: 16.5rem;
 }
