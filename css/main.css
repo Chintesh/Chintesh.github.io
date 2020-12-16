@@ -7,7 +7,6 @@ body {
       max-width: 1200px;
       margin: 0 auto;
       padding: 40px;
-      background-color: whitesmoke;
       color: #2b394a;
       -webkit-transition: background 500ms;
 }
@@ -35,7 +34,8 @@ nav ul li {
     color: gray;
 }
 nav ul li a {
-    color: gray;
+  color: #03867C;
+    /*color: gray;*/
     text-decoration: none;
 }
 main section h1 {
@@ -212,7 +212,6 @@ section.services-container h2 {
 .form input {
   border-bottom: 2px solid rgba(109, 182, 173, 1);
   margin-bottom: 40px;
-  background-color: whitesmoke;
 }
 .form textarea {
   line-height: 40px;
@@ -221,7 +220,6 @@ section.services-container h2 {
   margin-bottom: 40px;
   resize: none;
   padding: 5px;
-  background-color: whitesmoke;
 }
 .form input:focus, .form textarea:focus {
   border-color: #F74005;
@@ -405,10 +403,9 @@ button.menu.visiable {
 }
 nav.fixed {
     position: fixed;
-    background: whitesmoke;
     right: 0;
     top: 0;
-    padding: 30px;
+    padding: 40px;
     z-index: 9;
 }
 
@@ -763,10 +760,12 @@ blockquote:after {
   opacity:1;
 }
 .text-saddow{
-  text-shadow: 0px 3px 0px #b2a98f, 0px 5px 10px rgba(0,0,0,0.15), 0px 10px 2px rgba(0,0,0,0.1), 0px 10px 30px rgba(0,0,0,0.1);
-}
+  color: #03867C;
+/*  text-shadow: 0px 3px 0px #b2a98f, 0px 5px 10px rgba(0,0,0,0.15), 0px 10px 2px rgba(0,0,0,0.1), 0px 10px 30px rgba(0,0,0,0.1);
+*/}
 nav .text-saddow {
-    text-shadow: 0px 3px 0px #b2a98f, 0px 5px 10px rgba(0,0,0,0.15), 0px 6px 2px rgba(0,0,0,0.1), 0px 6px 30px rgba(0,0,0,0.1);
+  color: #03867C;
+    /*text-shadow: 0px 3px 0px #b2a98f, 0px 5px 10px rgba(0,0,0,0.15), 0px 6px 2px rgba(0,0,0,0.1), 0px 6px 30px rgba(0,0,0,0.1);*/
 }
 
 
@@ -825,8 +824,6 @@ skin
 .time {
   padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
   background-color: var(--timeBackgroundColor, #f0f0f0);
-
-  font-size: var(--timeFontSize, 0.75rem);
   font-weight: var(--timeFontWeight, 700);
   text-transform: var(--timeTextTransform, uppercase);
   color: var(--timeColor, currentColor);
@@ -988,6 +985,71 @@ SETTINGS
     margin-top: -40px;
 }
 
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+}
+footer i.fa {
+    padding: 15px;
+    background-color: rgba(109, 182, 173, .3);
+    border-color: rgba(109, 182, 173, 1);
+    color: rgba(109, 182, 173, 1);
+}
+
+footer i.fa.fa-facebook {
+    padding: 15px;
+        background-color: rgba(138, 138, 140, .3);
+    border-color: rgba(138, 138, 140, 1);
+    color: rgba(138, 138, 140, 1);
+}
+footer i.fa.fa-linkedin {
+    padding: 15px;
+        background-color: rgba(234, 112, 97, .3);
+    border-color: rgba(234, 112, 97, 1);
+    color: rgba(234, 112, 97, 1);
+}
+footer i.fa.fa-instagram {
+    padding: 15px;
+        background-color: rgba(109, 182, 173, .3);
+    border-color: rgba(109, 182, 173, 1);
+    color: rgba(109, 182, 173, 1);
+}
+footer i.fa.fa-twitter {
+    padding: 15px;
+        background-color: rgba(214, 89, 102, .3);
+    border-color: rgba(214, 89, 102, 1);
+    color: rgba(214, 89, 102, 1);
+}
+footer i.fa.fa-wordpress {
+    padding: 15px;
+        background-color: rgba(201, 155, 129, .3);
+    border-color: rgba(201, 155, 129, 1);
+    color: rgba(201, 155, 129, 1);
+}
+button.menu.visiable.opened{
+  right: 18.1rem;
+}
+
+
+@media screen and (min-width: 993px) {
+  button.menu,nav.fixed{ 
+    display: none !important;
+  }
+
+}
+
+
+@media screen and (min-width: 400px ?? max-width: 660px) {
+
+.direction-l .desc,
+.direction-r .desc {
+  margin: 1em 4em 0 4em;
+}
+
+}
+
+
 @media screen and (max-width: 992px) {
     section.introcontent p {
         margin: 15px 0 50px 0px;
@@ -1050,66 +1112,14 @@ i.fa.fa-lightbulb-o.fixed {
     top: 0;
     right: 8rem;
 }
+
+.chintesh_icon {
+    order: 2;
+    flex-basis: 73%;
 }
 
-@media screen and (min-width: 993px) {
-  button.menu,nav.fixed{ 
-    display: none !important;
-  }
-
+nav {
+    order: 3;
 }
 
-
-@media screen and (min-width: 400px ?? max-width: 660px) {
-
-.direction-l .desc,
-.direction-r .desc {
-  margin: 1em 4em 0 4em;
-}
-
-}
-
-footer {
-    text-align: center;
-    margin-top: 5rem;
-}
-footer i.fa {
-    padding: 15px;
-    background-color: rgba(109, 182, 173, .3);
-    border-color: rgba(109, 182, 173, 1);
-    color: rgba(109, 182, 173, 1);
-}
-
-footer i.fa.fa-facebook {
-    padding: 15px;
-        background-color: rgba(138, 138, 140, .3);
-    border-color: rgba(138, 138, 140, 1);
-    color: rgba(138, 138, 140, 1);
-}
-footer i.fa.fa-linkedin {
-    padding: 15px;
-        background-color: rgba(234, 112, 97, .3);
-    border-color: rgba(234, 112, 97, 1);
-    color: rgba(234, 112, 97, 1);
-}
-footer i.fa.fa-instagram {
-    padding: 15px;
-        background-color: rgba(109, 182, 173, .3);
-    border-color: rgba(109, 182, 173, 1);
-    color: rgba(109, 182, 173, 1);
-}
-footer i.fa.fa-twitter {
-    padding: 15px;
-        background-color: rgba(214, 89, 102, .3);
-    border-color: rgba(214, 89, 102, 1);
-    color: rgba(214, 89, 102, 1);
-}
-footer i.fa.fa-wordpress {
-    padding: 15px;
-        background-color: rgba(201, 155, 129, .3);
-    border-color: rgba(201, 155, 129, 1);
-    color: rgba(201, 155, 129, 1);
-}
-button.menu.visiable.opened{
-  right: 16.5rem;
 }
