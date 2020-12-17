@@ -6,9 +6,13 @@ body {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 40px;
+      padding: 40px 15px;
       color: #2b394a;
       -webkit-transition: background 500ms;
+}
+p{
+  text-align: justify;
+    word-break: normal; 
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Karla', sans-serif;
@@ -39,9 +43,9 @@ nav ul li a {
     text-decoration: none;
 }
 main section h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin: 0;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 main section h2 {
@@ -168,8 +172,8 @@ section.skills-dia {
 }
 section.skills-dia h2,section.services-container h2,section.contact-me h2, #testimonial-area h2, .ex_wraper h2{
     align-self: center;
-    font-size: 6em;
-    font-weight: 500;
+    font-size: 5em;
+    font-weight: bold;
 }
 section.services-container {
     display: flex;
@@ -203,6 +207,7 @@ section.services-container h2 {
   font-size: 18px;
   width: 100%;
   color:  rgba(201, 155, 129, 1);
+  font-weight: bold;
 }
 .form label, .form input {
   border: 0;
@@ -210,13 +215,13 @@ section.services-container h2 {
   line-height: 40px;
 }
 .form input {
-  border-bottom: 2px solid rgba(109, 182, 173, 1);
+  border-bottom: 4px solid rgba(109, 182, 173, 1);
   margin-bottom: 40px;
 }
 .form textarea {
   line-height: 40px;
   border: none;
-  border-bottom: 2px solid rgba(109, 182, 173, 1);
+  border-bottom: 4px solid rgba(109, 182, 173, 1);
   margin-bottom: 40px;
   resize: none;
   padding: 5px;
@@ -246,16 +251,16 @@ section.contact-me h2 {
 
 .skills_wraper {
     align-self: center;
-    flex-basis: 40%;
+    flex-basis: 50%;
 }
 .services_wraper {
-    flex-basis: 40%;
+    flex-basis: 50%;
     align-self: center;
     order: 2;
 }
 
 .servie_graph {
-    flex-basis: 55%;
+    flex-basis: 45%;
 }
 
 .contact_wraper {
@@ -407,6 +412,7 @@ nav.fixed {
     top: 0;
     padding: 40px;
     z-index: 9;
+    background-color: white;
 }
 
     .service_wrapper {
@@ -461,9 +467,9 @@ body.dark .form input{
     background-color: #2b394a;
 }
 body.dark button.menu.visiable {
-    background-color: rgba(46, 138, 75, .3);
-    border-color: rgba(46, 138, 75, 1);
-    color: rgba(46, 138, 75, 1);
+    background-color: rgba(46, 138, 75, 1);
+    border-color: #fff;
+    color: #fff;
 }
 body.dark nav.fixed {
     background: #2b394a;
@@ -490,19 +496,19 @@ section#ex-dia {
 }
 
 .service-block {
-   min-width: 180px;
-       width: 32%;
-   height: 200px;
-   position: relative;
-   transition: all 0.3s ease-in-out;
-   overflow: hidden;
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   background-color: #fff;
-   color: #666;
-   margin-bottom: 13px;
-   padding: 0 10px;
+      min-width: 170px;
+    width: 32%;
+    height: 200px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    color: #666;
+    margin-bottom: 9px;
+    padding: 0 10px;
 }
 
 .service-underlay {
@@ -577,35 +583,35 @@ section#ex-dia {
 
 /* Provide 10 different sizes */
 .service-block.wp {
-  background-color: rgba(201, 155, 129, .3);
-  border-color: rgba(201, 155, 129, 1);
-  color: rgba(201, 155, 129, 1);
+  background-color: rgba(201, 155, 129, 1);
+  border-color: #fff;
+  color: #fff
 }
 .service-block.des {
-      background-color: rgba(138, 138, 140, .3);
-    border-color: rgba(138, 138, 140, 1);
-    color: rgba(138, 138, 140, 1);
+      background-color: #8a8a8c;
+    border-color: #fff;
+    color: #fff;
   
 }
 .service-block.woo {
-  background-color: rgba(234, 112, 97, .3);
-  border-color: rgba(234, 112, 97, 1);
-  color: rgba(234, 112, 97, 1);
+  background-color:rgba(234, 112, 97, 1);
+  border-color: #fff;
+  color: #fff;
 }
 .service-block.mig {
-  background-color: rgba(109, 182, 173, .3);
-  border-color: rgba(109, 182, 173, 1);
-  color: rgba(109, 182, 173, 1);
+  background-color: rgba(109, 182, 173, 1);
+  border-color: #fff;
+  color:  #fff;
 }
 .service-block.maintain {
-  background-color: rgba(195, 192, 100, .3);
-  border-color: rgba(195, 192, 100, 1);
-  color: rgba(195, 192, 100, 1);
+  background-color: rgba(195, 192, 100, 1);
+  border-color: #fff;
+  color: #fff;
 }
 .service-block.plugins {
-    background-color: rgba(214, 89, 102, .3);
-  border-color: rgba(214, 89, 102, 1);
-  color: rgba(214, 89, 102, 1);
+    background-color: #d65966;
+  border-color: #fff;
+  color: #fff;
 }
 
 
@@ -670,9 +676,9 @@ overflow: hidden;
   margin:0;
   padding:30px;
   width:500px;
-      background-color: rgba(109, 182, 173, .3);
-    border-color: rgba(109, 182, 173, 1);
-    color: rgba(109, 182, 173, 1);
+      background-color: rgba(109, 182, 173, 1);
+    border-color: #fff;
+    color: #fff;
   box-shadow: 0 5px 2px rgba(0,0,0,0.1);
   position:relative;
   transition: background-color 0.6s linear;
@@ -691,9 +697,9 @@ blockquote:after {
   left: 10%; 
 } 
 .testi-in_wrapper #second:checked ~ .two blockquote {
-  background-color: rgba(201, 155, 129, .3);
-    border-color: rgba(201, 155, 129, 1);
-    color: rgba(201, 155, 129, 1);
+  background-color: rgba(201, 155, 129, 1);
+    border-color: #fff;
+    color: #fff;
 }
 .testi-in_wrapper .two blockquote:after{
   border: solid transparent; 
@@ -702,9 +708,9 @@ blockquote:after {
   border-width: 10px;
 }
 .testi-in_wrapper #third:checked ~ .three blockquote{
-  background-color: rgba(195, 192, 100, .3);
-    border-color: rgba(195, 192, 100, 1);
-    color: rgba(195, 192, 100, 1);
+  background-color: rgba(195, 192, 100, 1);
+    border-color: #fff;
+    color: #fff;
 }
 .testi-in_wrapper .three blockquote:after{
   border: solid transparent; 
@@ -912,16 +918,16 @@ SKIN
 .timeline__year {
   --timePadding: var(--timelineYearPadding, 0.5rem 1.5rem);
   --timeColor: var(--uiTimelineSecondaryColor);
-  --timeBackgroundColor: var(--uiTimelineMainColor);
+  --timeBackgroundColor: #d65966;
   --timeFontWeight: var(--timelineYearFontWeight, 400);
 }
 
 .timeline__card {
   position: relative;
   margin-left: var(--timelineCardLineGap, 1rem);
-  background-color: rgba(46, 138, 75, .3);
-    border-color: rgba(46, 138, 75, 1);
-    color: rgba(46, 138, 75, 1);
+  background-color: rgba(46, 138, 75, 1);
+    border-color: #fff;
+    color: #fff;
 }
 
 /*
@@ -960,21 +966,21 @@ SETTINGS
     flex-basis: 55%;
 }
 .timeline__card.card.green {
-    background-color: rgba(201, 155, 129, .3);
-    border-color: rgba(201, 155, 129, 1);
-    color: rgba(201, 155, 129, 1);
+    background-color:  rgba(201, 155, 129, 1);
+    border-color: #fff;
+    color: #fff;
 }
 
 .timeline__card.card.yellow {
-    background-color: rgba(138, 138, 140, .3);
-    border-color: rgba(138, 138, 140, 1);
-    color: rgba(138, 138, 140, 1);
+    background-color: #8a8a8c;
+    border-color: #fff;
+    color: #fff;
 }
 
 .timeline__card.card.gray {
-    background-color: rgba(109, 182, 173, .3);
-    border-color: rgba(109, 182, 173, 1);
-    color: rgba(109, 182, 173, 1);
+    background-color: rgba(109, 182, 173, 1);
+    border-color: #fff;
+    color: #fff;
 }
 /*section .intro_wrapper {
     flex-basis: 55%;
@@ -992,44 +998,62 @@ footer {
 }
 footer i.fa {
     padding: 15px;
-    background-color: rgba(109, 182, 173, .3);
-    border-color: rgba(109, 182, 173, 1);
-    color: rgba(109, 182, 173, 1);
+    background-color: rgba(109, 182, 173, 1);
+    border-color: #fff;
+    color: #fff;
 }
 
 footer i.fa.fa-facebook {
     padding: 15px;
-        background-color: rgba(138, 138, 140, .3);
-    border-color: rgba(138, 138, 140, 1);
-    color: rgba(138, 138, 140, 1);
+        background-color: #8a8a8c;
+    border-color: #fff;
+    color: #fff;
 }
 footer i.fa.fa-linkedin {
     padding: 15px;
-        background-color: rgba(234, 112, 97, .3);
-    border-color: rgba(234, 112, 97, 1);
-    color: rgba(234, 112, 97, 1);
+        background-color: rgba(234, 112, 97, 1);
+    border-color: #fff;
+    color: #fff;
 }
 footer i.fa.fa-instagram {
     padding: 15px;
-        background-color: rgba(109, 182, 173, .3);
-    border-color: rgba(109, 182, 173, 1);
-    color: rgba(109, 182, 173, 1);
+        background-color: rgba(109, 182, 173, 1);
+    border-color: #fff;
+    color: #fff;
 }
 footer i.fa.fa-twitter {
     padding: 15px;
-        background-color: rgba(214, 89, 102, .3);
-    border-color: rgba(214, 89, 102, 1);
-    color: rgba(214, 89, 102, 1);
+        background-color: #d65966;
+    border-color: #fff;
+    color: #fff;
 }
 footer i.fa.fa-wordpress {
     padding: 15px;
-        background-color: rgba(201, 155, 129, .3);
-    border-color: rgba(201, 155, 129, 1);
-    color: rgba(201, 155, 129, 1);
+        background-color:  rgba(201, 155, 129, 1);
+    border-color: #fff;
+    color: #fff;
 }
 button.menu.visiable.opened{
-  right: 18.1rem;
+  right: 21.6rem
 }
+
+ul.skills-list   {
+  list-style: none;
+      padding-left: 25px;
+      text-align: justify;
+    word-break: normal;
+        font-size: 1.2rem;
+}
+ul.skills-list li::before {
+  content: "\2022";
+  color:  rgb(43 116 241);
+  font-weight: bold;
+  display: inline-block; 
+    width: 1em;
+      font-size: 1.3rem;
+  margin-left: -1em;
+}
+
 
 
 @media screen and (min-width: 993px) {
@@ -1120,6 +1144,9 @@ i.fa.fa-lightbulb-o.fixed {
 
 nav {
     order: 3;
+}
+.timeline__year {
+    font-size: 34px;
 }
 
 }
