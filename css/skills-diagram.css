@@ -3,6 +3,7 @@
   font-weight: bold;
   text-align: center;
   flex-basis: 45%;
+      align-self: center;
 }
 .skills-diagram > dd {
   /* Hide inner attributes */

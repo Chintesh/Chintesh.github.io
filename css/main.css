@@ -11,9 +11,14 @@ body {
       -webkit-transition: background 500ms;
 }
 p{
-  text-align: justify;
-    word-break: normal; 
     font-size: 1.3rem;
+}
+p.large_pad {
+    padding-bottom: 30px;
+}
+nav.fixed li.text-saddow {
+    font-size: 8rem;
+    text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Karla', sans-serif;
@@ -102,9 +107,9 @@ box-sizing: border-box;
 margin: 0;
 }
 
-section.introcontent p {
+section.introcontent p, ul.skills-list li {
     font-size: 1.2rem;
-    margin: 10px 0px 32px 0;
+    margin: 10px 0px 15px 0;
 }
 
 .btn-dark, input[type="submit"] {
@@ -152,8 +157,8 @@ body.dark .btn, input[type="submit"]{
     font-size: 4em;
 }
 .btn-dark:hover, input[type="submit"]:hover, .btn-dark.active {
-    border: solid 2px #f2cdc8;
-    background: #f2cdc8;
+    border: solid 2px #fff;
+    background: #d65966;
     color: #fff;
 }
 .normal-underline,
@@ -255,13 +260,14 @@ section.contact-me h2 {
     flex-basis: 50%;
 }
 .services_wraper {
-    flex-basis: 50%;
+    flex-basis: 42%;
     align-self: center;
     order: 2;
 }
 
 .servie_graph {
-    flex-basis: 45%;
+    flex-basis: 55%;
+        align-self: center;
 }
 
 .contact_wraper {
@@ -404,16 +410,19 @@ button.menu.visiable {
     position: fixed;
     right: 0;
     top: 0;
-    background: #e6e5c9;
+    background: #c3c064;
     z-index: 9;
 }
 nav.fixed {
     position: fixed;
-    right: 0;
+    width: 100%;
+    left: 0;
+    height: 100vh;
     top: 0;
     padding: 40px;
     z-index: 9;
     background-color: white;
+    /* font-size: 34rem; */
 }
 
     .service_wrapper {
@@ -498,18 +507,18 @@ section#ex-dia {
 
 .service-block {
       min-width: 170px;
-    width: 32%;
-    height: 200px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: #fff;
-    color: #666;
-    margin-bottom: 9px;
-    padding: 0 10px;
+      width: 32%;
+      height: 200px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      background-color: #fff;
+      color: #666;
+      margin-bottom: 12px;
+      padding: 0 10px;
 }
 
 .service-underlay {
@@ -785,11 +794,6 @@ nav .text-saddow {
 styles of typography  https://github.com/melnik909/css-typography
 */
 
-p:not([class]) {
-  line-height: var(--cssTypographyLineHeight, 1.78);
-  margin-top: var(--cssTypographyBasicMargin, 1em);
-  margin-bottom: 0;
-}
 
 p:not([class]):first-child {
   margin-top: 0;
@@ -1035,14 +1039,14 @@ footer i.fa.fa-wordpress {
     color: #fff;
 }
 button.menu.visiable.opened{
-  right: 21.6rem
+  /* right: 21.6rem */
 }
 
 ul.skills-list   {
   list-style: none;
-      padding-left: 25px;
+      padding-left: 25px;/*
       text-align: justify;
-    word-break: normal;
+    word-break: normal;*/
         font-size: 1.2rem;
 }
 ul.skills-list li{
@@ -1055,7 +1059,7 @@ ul.skills-list li::before {
   display: inline-block; 
     width: 1em;
       font-size: 1.3rem;
-  margin-left: -1em;
+  margin-left: -0.9em;
 }
 
 
@@ -1079,11 +1083,15 @@ ul.skills-list li::before {
 
 
 @media screen and (max-width: 992px) {
-    section.introcontent p {
+  ul.skills-list li::before {
+    font-size: 3rem;
+    margin-left: -0.9em;
+}
+    section.introcontent p, ul.skills-list li, p{
         margin: 15px 0 50px 0px;
     }
     section.introcontent p, ul.skills-list li, p {
-        font-size: 0.9rem;
+        font-size: 16px;
     }
     section.introcontent {
          max-width:  100%;
@@ -1096,7 +1104,7 @@ ul.skills-list li::before {
       padding-top: 5rem;
     }
     .contact_form{
-    padding-top:5rem;
+    padding-top:2rem;
   }
 
 .form label, .form input, .form textarea, .form button{
