@@ -5,7 +5,9 @@ Body css
 * {
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Martel', serif;
   margin: 0 auto;
@@ -19,7 +21,9 @@ body {
 header.imchintesh_header {
   background-color: #f7f5e6;
 }
-
+i.fa {
+    color: #52658f;
+}
 .main_header {
   display: flex;
   justify-content: space-between;
@@ -36,25 +40,33 @@ header.imchintesh_header {
 .imchintesh_header nav a {
   color: #52658f;
   display: inline-block;
-  padding: 70px 0 0 0;
-  background: url(../images/book.svg) no-repeat center top;
+  /*padding: 70px 0 0 0;*/
+ /* background: url(../images/book.svg) no-repeat center top;*/
   text-decoration: none;
   font-weight: 700;
 }
 
 .imchintesh_header nav li.blog a {
-  background: url(../images/blog.svg) no-repeat center 5px;
+ /* background: url(../images/blog.svg) no-repeat center 5px;*/
   min-width: 65px;
 }
 
 .imchintesh_header nav li.about a {
-  background: url(../images/geraldine.svg) no-repeat center top;
+  /*background: url(../images/geraldine.svg) no-repeat center top;*/
 }
 
 .imchintesh_header nav li.guides a {
-  background: url(../images/guide.svg) no-repeat center 5px;
+  /*background: url(../images/guide.svg) no-repeat center 5px;*/
 }
-
+.imchintesh_header ul#primary-nav i.fa {
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
+.imchintesh_header ul#primary-nav a{
+  color: black;
+      font-size: 30px;
+}
 .imchintesh_header nav.imchintesh_nav {
   flex-basis: 65%;
   align-self: center;
@@ -67,7 +79,7 @@ header.imchintesh_header {
 }
 
 .imchintesh_header ul#primary-nav li {
-  width: 30%;
+  width: 50%;
   list-style: none;
   padding: 30px;
   text-align: center;
@@ -657,6 +669,8 @@ footer i.fa {
   background-color: rgb(82 101 143);
   border-color: #fff;
   color: #fff;
+      border-radius: 25px;
+      width: 46px;
 }
 
 ul.skills-list li,
@@ -716,6 +730,12 @@ p {
   .single-skill {
     width: 50%;
   }
+  .imchintesh_header ul#primary-nav i.fa{
+    font-size: 50px;
+  }
+  .imchintesh_header ul#primary-nav a {
+    font-size: 22px;
+   }
 }
 
 nav.imchintesh_nav.fixed {
