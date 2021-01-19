@@ -62,7 +62,7 @@ function toggleNav() {
 }
 
 
-jQuery('.imchintesh_header ul#primary-nav a').click(function(){
+jQuery('.main_header ul#primary-nav a').click(function(){
   burger.classList.remove('is-active');
     imchintesh_nav.classList.remove('fixed');
 });
