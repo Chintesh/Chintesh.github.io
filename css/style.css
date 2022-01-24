@@ -328,21 +328,6 @@ nav.imchintesh_nav.fixed ul#primary-nav {
     right: 15px;
     z-index: 1;
 }
-@media only screen and (max-width: 600px) {
-  #burger {
-    display: block;
-  }
-  nav#imchintesh_nav {
-    display: none;
-
-}
-section .aboutme,section .skils{
-    display: block;
-}
-body {
-  margin: 0 20px;
-}
-}
 #burger.is-active span {
     transition: transform 0.6s cubic-bezier(0.54, 0.1, 0.42, 1.48), width 0.6s ease-in;
 }
@@ -547,4 +532,31 @@ animation-delay:5.5s;
 }
 .main_title.diff span {
   font-size: 4.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #burger {
+    display: block;
+  }
+  nav#imchintesh_nav {
+    display: none;
+
+}
+section .aboutme,section .skils{
+    display: block;
+}
+body {
+  margin: 0 20px;
+}
+.skils_wrapper {
+    display: block;
+}
+
+div#animation-container-main {
+    opacity: 0.4;
+}
+
+div#animation-container-main span {
+    color: whitesmoke;
+}
 }
