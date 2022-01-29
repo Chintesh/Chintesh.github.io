@@ -1,20 +1,20 @@
 body{
-    background-color: #2E343C;
+    background-color: black;
 }
 nav.imchintesh_nav.fixed {
-    background-color: #2E343C;
+    background-color: black;
 }
 #burger span {
-    background-color: whitesmoke;
+    background-color: white;
 }
 p,.skils_wrapper ul.skills-list,.button a,.button span,.button.small a,.button.small span,.animation-container span,nav#imchintesh_nav ul li a,.logo_content span,.c-services__item h3{
-       color: whitesmoke;
+       color: white;
 }
 .skils_wrapper  ul li::before {
-  border-color: whitesmoke;
+  border-color: white;
 }
 nav#imchintesh_nav ul li a:hover {
-    border-bottom: 5px solid whitesmoke;
+    border-bottom: 5px solid white;
 }
 
 body.white{
@@ -24,7 +24,7 @@ body.white nav.imchintesh_nav.fixed {
     background-color: white;
 }
 body.white #burger span {
-    background-color: #2E343C;
+    background-color: #db7800;
 }
 body.white p,
 body.white .skils_wrapper ul.skills-list,
@@ -36,24 +36,24 @@ body.white .animation-container span,
 body.white nav#imchintesh_nav ul li a,
 body.white .logo_content span,
 body.white .c-services__item h3{
-       color: #2E343C;
+       color: black;
 }
 body.white  .skils_wrapper  ul li::before {
-  border-color: #2E343C;
+  border-color: black;
 }
 body.white nav#imchintesh_nav ul li a:hover {
-    border-bottom: 5px solid #2E343C;
+    border-bottom: 5px solid black;
 }
 
-body{
-    font-family: 'Bebas Neue', cursive;
+.logo_content span,nav#imchintesh_nav ul li a,h2,.animation-container span{
+     font-family: 'Bebas Neue', cursive;
 }
 body p.main_title{
     font-family: 'Rubik', sans-serif;
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     margin: 0;
     font-weight: 800;
-    color: #D11F47;
+    color: #db7800;
     font-family: 'Big Shoulders Text', cursive;
 }
 h1 {
@@ -68,36 +68,40 @@ h1 {
 }
 h2{
     font-size: 3rem;
-    color: #D11F47;
+    color: #db7800;
 }
 p,.skils_wrapper ul.skills-list{
-       font-size: 30px;
-        font-family: 'Big Shoulders Text', cursive;
+       font-size: 23px;
         letter-spacing: 1px;
 }
 .container{
-    max-width: 2000px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 50px 30px;
 }
 .aboutme{
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    justify-content: center;
+    align-self: center;
 }
 .button{
    font-size: 21px;
-   /* font-weight: 800; */
    text-decoration: none;
-   font-family: 'Bebas Neue', cursive;
+   font-family: 'Big Shoulders Text', cursive
+
 }
 .button a{
-      font-size: 2rem;
+    font-size: 1.5rem;
+    border: 1px solid orange;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 .button span {
   font-size: 2rem;
 }
 .arrow_container__1bu8b {
-  color: #d11f47 !important;
+  color: #db7800 !important;
 }
 .button.small{
    font-size: 1rem;
@@ -117,14 +121,8 @@ p,.skils_wrapper ul.skills-list{
         font-size: 1.2rem;
         font-weight: bold;
 }
-.intro_wrapper {
-    flex-basis: 65%;
-}
 .imchintesh_icon {
-    position: relative;
-    flex-basis: 48%;
-    justify-content: center;
-    align-self: center;
+    margin-bottom: 15px;
 }
 
 .dynamic-text, .static-text {
@@ -181,7 +179,7 @@ p,.skils_wrapper ul.skills-list{
 .animation-container span {
   position: absolute;
   display: block;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 100;
   user-select: none;
   pointer-events: none;
@@ -192,6 +190,7 @@ p,.skils_wrapper ul.skills-list{
   will-change: transform, opacity;
   animation-timing-function: ease-out;
   animation-name: move;
+  color: #db7800;
 }
 
 @keyframes move {
@@ -296,10 +295,6 @@ p,.skils_wrapper ul.skills-list{
     display: flex;
     justify-content: space-between;
 }
-.imchintesh_icon {
-    flex-basis: 48%;
-    margin: 0 40px 0 0;
-}
 section.section.skills {
     margin-left: 40px;
 }
@@ -379,7 +374,7 @@ nav#imchintesh_nav ul {
 
 nav#imchintesh_nav ul li {
     list-style: none;
-    color: #D11F47;
+    color: #db7800;
     font-size: 2rem;
 }
 .logo_content span{
@@ -527,11 +522,11 @@ animation-delay:5.5s;
   font-size: 35px;
 }
 .main_title.diff span {
-  font-size: 4.5rem;
+  font-size: 6.5rem;
 }
 
 .c-services__item {
-    /* padding: 13px; */
+    padding: 13px;
     border-radius: 25px;
     list-style: none;
 }
@@ -553,7 +548,42 @@ animation-delay:5.5s;
   flex-basis: 30%;
 }
 
-
+.two_btn {
+  display: flex;
+}
+.two_btn .button {
+  padding-right: 20px;
+}
+.profileicons {display: flex;}
+.profile_icons i {
+    font-size: 2rem !important;
+    text-align: center;
+    padding: 10px;
+    width: 3%;
+}
+.profile_icons i.fa-wordpress {
+    color: #919191;
+    border-bottom: 1px solid #919191;
+    background-color: #9191912e;
+}
+.profile_icons i.fa-facebook {
+    color: #8f6bb3;
+    border-bottom: 1px solid #8f6bb3;
+    background-color: #8f6bb324;
+}
+.profile_icons i.fa-instagram {
+    color: #a77880;
+    border-bottom: 1px solid #a77880;
+    background-color: #a7788038;
+}
+.profile_icons i.fa-linkedin {
+    color: #1c73a1;
+    border-bottom: 1px solid #1c73a1;
+    background-color: #1c73a136;
+}
+.profile_icons {
+    margin-bottom: 30px;
+}
 @media only screen and (max-width: 600px) {
     #burger {
         display: block;
@@ -568,7 +598,7 @@ animation-delay:5.5s;
       padding: 50px 10px;
     }
     .main_header.container {
-      padding: 0px 10px;
+      padding: 0;
     }
     nav.imchintesh_nav.fixed li {
       padding: 15px;
@@ -586,4 +616,103 @@ animation-delay:5.5s;
     body.white .animation-container span{
     color: #00000054;   
     }
+    .logo_content span {
+      font-size: 3rem;
+    }
+    body p.main_title {
+      font-size: 2.5rem;
+    }
+    .main_title.diff {
+      font-size: 25px;
+    }
+    .main_title.diff span {
+      font-size: 2.5rem;
+    }
+    p, .skils_wrapper ul.skills-list {
+      font-size: 20px;
+    }
+    .button a {
+        font-size: 20px;
+    }
+    .button span {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    .profile_icons i {
+      width: 10%;
+  }
+}
+html, body {
+  
+  display: table;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 7s 0s infinite;
+          animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1) {
+  margin-left: -25%;
+}
+.line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.line:nth-child(3) {
+  margin-left: 25%;
+}
+.line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
 }
