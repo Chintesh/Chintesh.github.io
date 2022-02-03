@@ -11,7 +11,7 @@ p,.skils_wrapper ul.skills-list,.button a,.button span,.button.small a,.button.s
        color: white;
 }
 .skils_wrapper  ul li::before {
-  border-color: white;
+  border-color: #1c73a1;
 }
 nav#imchintesh_nav ul li a:hover {
     border-bottom: 5px solid white;
@@ -53,7 +53,7 @@ body p.main_title{
     font-size: 6.5rem;
     margin: 0;
     font-weight: 800;
-    color: #db7800;
+    color: #1c73a1;
     font-family: 'Big Shoulders Text', cursive;
 }
 h1 {
@@ -68,7 +68,7 @@ h1 {
 }
 h2{
     font-size: 3rem;
-    color: #db7800;
+    color: #1c73a1;
 }
 p,.skils_wrapper ul.skills-list{
        font-size: 20px;
@@ -92,7 +92,7 @@ p,.skils_wrapper ul.skills-list{
 }
 .button a{
     font-size: 1.5rem;
-    border: 1px solid orange;
+    border: 1px solid #1c73a1;
     padding: 10px;
     letter-spacing: 1px;
     text-decoration: none;
@@ -386,7 +386,7 @@ nav#imchintesh_nav ul {
 
 nav#imchintesh_nav ul li {
     list-style: none;
-    color: #db7800;
+    color: #1c73a1;
     font-size: 2rem;
 }
 .logo_content span{
@@ -625,7 +625,7 @@ animation-delay:5.5s;
 .expertise.ex1 {
     color: #a77880;
     border-bottom: 1px solid #a77880;
-    background-color: #a7788038;
+    background-color: #a7788026;
 }
 .expertise.ex1:hover {
   box-shadow: 0px 0px 20px #a77880;
@@ -648,8 +648,8 @@ animation-delay:5.5s;
 }
 .expertise.ex4 {
         color: #1c73a1;
-    border-bottom: 1px solid #1c73a1;
-    background-color: #1c73a136;
+        border-bottom: 1px solid #1c73a1;
+        background-color: #1c73a12b;
 }
 .expertise.ex4:hover {
   box-shadow: 0px 0px 20px #1c73a1;
@@ -657,7 +657,7 @@ animation-delay:5.5s;
 .expertise.ex5 {
      color: #8d7549;
      border-bottom: 1px solid #8d7549;
-     background-color: #8d754940;
+     background-color: #8d754921;
 }
 .expertise.ex5:hover {
   box-shadow: 0px 0px 20px #8d7549;
@@ -665,7 +665,7 @@ animation-delay:5.5s;
 .expertise.ex6 {
      color: #4f8585;
      border-bottom: 1px solid #4f8585;
-     background-color: #4f858538;
+     background-color: #4f858536;
 }
 .expertise.ex6:hover {
   box-shadow: 0px 0px 20px #4f8585;
@@ -745,5 +745,8 @@ animation-delay:5.5s;
     }
     .expertise_div {
       display: block;
+    }
+    #animation-container-main{
+      display: none;
     }
 }
