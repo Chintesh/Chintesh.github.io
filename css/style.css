@@ -11,7 +11,7 @@ p,.skils_wrapper ul.skills-list,.button a,.button span,.button.small a,.button.s
        color: white;
 }
 .skils_wrapper  ul li::before {
-  border-color: #1c73a1;
+  border-color: #db7800;
 }
 nav#imchintesh_nav ul li a:hover {
     border-bottom: 5px solid white;
@@ -53,7 +53,7 @@ body p.main_title{
     font-size: 6.5rem;
     margin: 0;
     font-weight: 800;
-    color: #1c73a1;
+    color: #db7800;
     font-family: 'Big Shoulders Text', cursive;
 }
 h1 {
@@ -68,10 +68,10 @@ h1 {
 }
 h2{
     font-size: 3rem;
-    color: #1c73a1;
+    color: #db7800;
 }
 p,.skils_wrapper ul.skills-list{
-       font-size: 20px;
+       font-size: 18px;
        letter-spacing: 1px;
 }
 .container{
@@ -386,7 +386,7 @@ nav#imchintesh_nav ul {
 
 nav#imchintesh_nav ul li {
     list-style: none;
-    color: #1c73a1;
+    color: #db7800;
     font-size: 2rem;
 }
 .logo_content span{
@@ -749,4 +749,7 @@ animation-delay:5.5s;
     #animation-container-main{
       display: none;
     }
+    p, .skils_wrapper ul.skills-list {
+      font-size: 16px;
+  }
 }
