@@ -1,5 +1,7 @@
 body{
     background-color: black;
+    margin: 8px auto;
+    padding: 0 15px;
 }
 nav.imchintesh_nav.fixed {
     background-color: black;
@@ -7,7 +9,7 @@ nav.imchintesh_nav.fixed {
 #burger span {
     background-color: white;
 }
-p,.skils_wrapper ul.skills-list,.button a,.button span,.button.small a,.button.small span,.animation-container span,nav#imchintesh_nav ul li a,.logo_content span,.c-services__item h3{
+p,.expertise a,.skils_wrapper ul.skills-list,.button a,.button span,.button.small a,.button.small span,.animation-container span,nav#imchintesh_nav ul li a,.logo_content span,.c-services__item h3{
        color: white;
 }
 .skils_wrapper  ul li::before {
@@ -18,13 +20,13 @@ nav#imchintesh_nav ul li a:hover {
 }
 
 body.white{
-    background-color: white;
+    background-color: black;
 }
 body.white nav.imchintesh_nav.fixed {
-    background-color: white;
+    background-color: black;
 }
 body.white #burger span {
-    background-color: #db7800;
+    background-color: white;
 }
 body.white p,
 body.white .skils_wrapper ul.skills-list,
@@ -36,13 +38,13 @@ body.white .animation-container span,
 body.white nav#imchintesh_nav ul li a,
 body.white .logo_content span,
 body.white .c-services__item h3{
-       color: black;
+       color: white;
 }
 body.white  .skils_wrapper  ul li::before {
-  border-color: black;
+  border-color: white;
 }
 body.white nav#imchintesh_nav ul li a:hover {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid white;
 }
 
 .logo_content span,nav#imchintesh_nav ul li a,h2,.animation-container span{
@@ -71,11 +73,11 @@ h2{
     color: #db7800;
 }
 p,.skils_wrapper ul.skills-list{
-       font-size: 18px;
+       font-size: 25px;
        letter-spacing: 1px;
 }
 .container{
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 50px 30px;
 }
@@ -92,7 +94,7 @@ p,.skils_wrapper ul.skills-list{
 }
 .button a{
     font-size: 1.5rem;
-    border: 1px solid #db7800;
+    border: 2px solid white;
     padding: 10px;
     letter-spacing: 1px;
     text-decoration: none;
@@ -414,7 +416,8 @@ nav#imchintesh_nav ul li a:hover {
 }
 .skils_wrapper ul.skills-list li {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Big Shoulders Text', cursive;
+    letter-spacing: 1px;
 }
 
 
@@ -571,28 +574,8 @@ animation-delay:5.5s;
 .profile_icons i {
     font-size: 2rem !important;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     width: 3%;
-}
-.profile_icons i.fa-wordpress {
-    color: #919191;
-    border-bottom: 1px solid #919191;
-    background-color: #9191912e;
-}
-.profile_icons i.fa-facebook {
-    color: #8f6bb3;
-    border-bottom: 1px solid #8f6bb3;
-    background-color: #8f6bb324;
-}
-.profile_icons i.fa-instagram {
-    color: #a77880;
-    border-bottom: 1px solid #a77880;
-    background-color: #a7788038;
-}
-.profile_icons i.fa-linkedin {
-    color: #1c73a1;
-    border-bottom: 1px solid #1c73a1;
-    background-color: #1c73a136;
 }
 .profile_icons {
     margin-bottom: 60px;
@@ -612,75 +595,42 @@ animation-delay:5.5s;
     padding: 13px;
     flex-basis: 30%;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 29px;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 10px;
+    border-radius: 16px;
+    font-family: 'Big Shoulders Text', cursive;
+    letter-spacing: 1px;
 }
 .expertise i.fa {
     font-size: 4rem;
     padding-right: 30px;
+    color: white;
     margin-bottom: 20px;
-}
-.expertise.ex1 {
-    color: #a77880;
-    border-bottom: 1px solid #a77880;
-    background-color: #a7788026;
-}
-.expertise.ex1:hover {
-  box-shadow: 0px 0px 20px #a77880;
-}
-.expertise.ex2 {
-     color: #919191;
-    border-bottom: 1px solid #919191;
-    background-color: #9191912e;
-}
-.expertise.ex2:hover {
-  box-shadow: 0px 0px 20px #919191;
-}
-.expertise.ex3 {
-    color: #8f6bb3;
-    border-bottom: 1px solid #8f6bb3;
-    background-color: #8f6bb324;
-}
-.expertise.ex3:hover {
-  box-shadow: 0px 0px 20px #8f6bb3;
-}
-.expertise.ex4 {
-        color: #1c73a1;
-        border-bottom: 1px solid #1c73a1;
-        background-color: #1c73a12b;
-}
-.expertise.ex4:hover {
-  box-shadow: 0px 0px 20px #1c73a1;
-}
-.expertise.ex5 {
-     color: #8d7549;
-     border-bottom: 1px solid #8d7549;
-     background-color: #8d754921;
-}
-.expertise.ex5:hover {
-  box-shadow: 0px 0px 20px #8d7549;
-}
-.expertise.ex6 {
-     color: #4f8585;
-     border-bottom: 1px solid #4f8585;
-     background-color: #4f858536;
-}
-.expertise.ex6:hover {
-  box-shadow: 0px 0px 20px #4f8585;
 }
 .expertise span {
     text-align: center;
+    color: white;
+    font-weight: 600;
 } 
 .expertise p{
-  font-size: 15px;
+  font-size: 25px;
 }
 .expertise a {
-  color: white;
+  color: #db7800;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
 }
+body.white nav#imchintesh_nav ul li {
+    color: #db7800;
+}
+
+body.white .animation-container span {
+    color: white;
+}
+ body.white .button a{
+      font-weight: 600;
+      color: #db7800;
+ }
 @media only screen and (max-width: 600px) {
     #burger {
         display: block;
@@ -749,7 +699,10 @@ animation-delay:5.5s;
     #animation-container-main{
       display: none;
     }
-    p, .skils_wrapper ul.skills-list {
-      font-size: 16px;
+    .expertise p {
+    font-size: 20px;
+  }
+  .expertise span {
+      font-size: 25px;
   }
 }
