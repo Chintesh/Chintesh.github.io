@@ -20,13 +20,13 @@ nav#imchintesh_nav ul li a:hover {
 }
 
 body.white{
-    background-color: black;
+    /* background-color: white; */
 }
 body.white nav.imchintesh_nav.fixed {
     background-color: black;
 }
 body.white #burger span {
-    background-color: white;
+    background-color: #FFFF00;
 }
 body.white p,
 body.white .skils_wrapper ul.skills-list,
@@ -41,7 +41,7 @@ body.white .c-services__item h3{
        color: white;
 }
 body.white  .skils_wrapper  ul li::before {
-  border-color: white;
+  border-color: #FFFF00;
 }
 body.white nav#imchintesh_nav ul li a:hover {
     border-bottom: 5px solid white;
@@ -55,7 +55,7 @@ body p.main_title{
     font-size: 6.5rem;
     margin: 0;
     font-weight: 800;
-    color: #db7800;
+    color: #FFFF00;
     font-family: 'Big Shoulders Text', cursive;
 }
 h1 {
@@ -70,7 +70,7 @@ h1 {
 }
 h2{
     font-size: 3rem;
-    color: #db7800;
+    color: #FFFF00;
 }
 p,.skils_wrapper ul.skills-list{
        font-size: 25px;
@@ -616,20 +616,20 @@ animation-delay:5.5s;
   font-size: 25px;
 }
 .expertise a {
-  color: #db7800;
+  color: #FFFF00;
   text-decoration: none;
   font-size: 20px;
 }
 body.white nav#imchintesh_nav ul li {
-    color: #db7800;
+    color: #FFFF00;
 }
 
 body.white .animation-container span {
-    color: white;
+    color: #FFFF00;
 }
  body.white .button a{
       font-weight: 600;
-      color: #db7800;
+      color: #FFFF00;
  }
 @media only screen and (max-width: 600px) {
     #burger {
@@ -642,7 +642,7 @@ body.white .animation-container span {
         display: block;
     }
     .container {
-      padding: 50px 10px;
+      padding: 30px 0px;
     }
     .main_header.container {
       padding: 0;
@@ -704,5 +704,18 @@ body.white .animation-container span {
   }
   .expertise span {
       font-size: 25px;
+  }
+  .skils_wrapper  ul li::before {
+    content: "";
+    display: flex;
+    left: 0px;
+    top: -2px;
+    width: 11px;
+    height: 12px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+    margin-right: 20px;
   }
 }
