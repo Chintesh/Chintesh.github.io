@@ -4,53 +4,6 @@ body{
     padding: 0 15px;
 }
 
-
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-canvas {
-    display:block;
-    position: fixed;
-}
-/* ---- particles.js container ---- */
-
-#particles-js {
-    opacity: 0.48;
-}
-
 nav.imchintesh_nav.fixed {
     background-color: black;
 }
@@ -687,108 +640,6 @@ body.white .animation-container span {
       color: #000000;
  }
 
-@media only screen and (max-width: 600px) {
-    #burger {
-        display: block;
-    }
-    nav#imchintesh_nav {
-        display: none;
-    }
-    section .aboutme,section .skils{
-        display: block;
-    }
-    .container {
-      padding: 30px 0px;
-    }
-    .main_header.container {
-      padding: 0;
-      justify-content: normal;
-    }
-    nav.imchintesh_nav.fixed li {
-      padding: 15px;
-      font-size: 2.5rem !important;
-    }
-    .skils_wrapper {
-      display: block;
-    }
-    .animation-container span {
-      color: #f5f5f566;
-    }
-    .c-services .c-services__item {
-      flex-basis: 100%;
-    }
-    body.white .animation-container span{
-    color: #00000054;   
-    }
-    .logo_content span {
-      font-size: 28px;
-    }
-    body p.main_title {
-      font-size: 3.5rem;
-    }
-    .main_title.diff {
-      font-size: 25px;
-    }
-    .main_title.diff span {
-      font-size: 2.3rem;
-    }
-    p, .skils_wrapper ul.skills-list {
-      font-size: 20px;
-    }
-    .button a {
-        font-size: 20px;
-    }
-    .button span {
-      font-size: 25px;
-    }
-    h2 {
-      font-size: 40px;
-    }
-    .profile_icons i {
-      width: 10%;
-      color: black;
-    }
-    .expertise {
-      display: block;
-    }
-    .expertise_div {
-      display: block;
-    }
-    #animation-container-main{
-      display: none;
-    }
-    .expertise p {
-    font-size: 20px;
-  }
-  .expertise span {
-      font-size: 25px;
-  }
-  .skils_wrapper  ul li::before {
-    content: "";
-    display: flex;
-    left: 0px;
-    top: -2px;
-    width: 11px;
-    height: 12px;
-    border-width: 0 2px 2px 0;
-    border-style: solid;
-    transform-origin: bottom left;
-    transform: rotate(45deg);
-    margin-right: 20px;
-  }
-  .about_img {
-    display: none;
-}
-
-  footer.main {
-      display: block !important;
-      text-align: center;
-  }
-
-  footer.main div {
-      padding: 20px 0;
-  }
-}
 .read_moore {font-size: 16px;color: #fc2c03;}
 section#aboutme {display: flex;}
 
@@ -842,18 +693,6 @@ blockquote:nth-of-type(even) footer:before {
 blockquote:nth-of-type(even) footer:after {
   content: " -";
 }
-@element 'blockquote' and (min-width: 300px) {
-  blockquote {
-    padding: 1em 20% 1em 1em;
-  }
-  blockquote p {
-    font-size: 14pt;
-  }
-  blockquote:nth-of-type(even) {
-    padding: 1em 1em 1em 20%;
-  }
-}
-
 
 section#testimonials blockquote{
     font-style: italic;
@@ -1452,4 +1291,112 @@ footer.main {
 }
 .expertise.ex1, .expertise.ex2,.expertise.ex4,.expertise.ex5 {
   border-right: 1px solid #ffb441;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #burger {
+        display: block;
+    }
+    nav#imchintesh_nav {
+        display: none;
+    }
+    section .aboutme,section .skils{
+        display: block;
+    }
+    .container {
+      padding: 30px 0px;
+    }
+    .main_header.container {
+      padding: 0;
+      justify-content: normal;
+    }
+    nav.imchintesh_nav.fixed li {
+      padding: 15px;
+      font-size: 2.5rem !important;
+    }
+    .skils_wrapper {
+      display: block;
+    }
+    .animation-container span {
+      color: #f5f5f566;
+    }
+    .c-services .c-services__item {
+      flex-basis: 100%;
+    }
+    body.white .animation-container span{
+    color: #00000054;   
+    }
+    .logo_content span {
+      font-size: 28px;
+    }
+    body p.main_title {
+      font-size: 3.5rem;
+    }
+    .main_title.diff {
+      font-size: 25px;
+    }
+    .main_title.diff span {
+      font-size: 2.3rem;
+    }
+    p, .skils_wrapper ul.skills-list {
+      font-size: 20px;
+    }
+    .button a {
+        font-size: 20px;
+    }
+    .button span {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    .profile_icons i {
+      width: 10%;
+      color: black;
+    }
+    .expertise {
+      display: block;
+    }
+    .expertise_div {
+      display: block;
+    }
+    #animation-container-main{
+      display: none;
+    }
+    .expertise p {
+    font-size: 20px;
+  }
+  .expertise span {
+      font-size: 25px;
+  }
+  .skils_wrapper  ul li::before {
+    content: "";
+    display: flex;
+    left: 0px;
+    top: -2px;
+    width: 11px;
+    height: 12px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+    margin-right: 20px;
+  }
+  .about_img {
+    display: none;
+}
+
+  footer.main {
+      display: block !important;
+      text-align: center;
+  }
+
+  footer.main div {
+      padding: 20px 0;
+  }
+  .expertise.ex1, .expertise.ex2, .expertise.ex4, .expertise.ex5 {
+     border-right: : none;
+    border-bottom: : 1px solid #ffb441;
+}
 }
