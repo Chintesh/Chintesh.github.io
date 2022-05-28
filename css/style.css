@@ -779,6 +779,15 @@ body.white .animation-container span {
   .about_img {
     display: none;
 }
+
+  footer.main {
+      display: block !important;
+      text-align: center;
+  }
+
+  footer.main div {
+      padding: 20px 0;
+  }
 }
 .read_moore {font-size: 16px;color: #fc2c03;}
 section#aboutme {display: flex;}
@@ -1443,12 +1452,4 @@ footer.main {
 }
 .expertise.ex1, .expertise.ex2,.expertise.ex4,.expertise.ex5 {
   border-right: 1px solid #ffb441;
-}
-footer.main {
-    display: block;
-    text-align: center;
-}
-
-footer.main div {
-    padding: 20px 0;
 }
